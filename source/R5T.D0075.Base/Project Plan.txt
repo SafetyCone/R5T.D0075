@@ -1,4 +1,4 @@
-R5T.D0075.Base - Base service definitions library for the ICommandLineBuilder service.
+R5T.D0075.Base - Base service definitions library for the ICommandLineOperator service.
 
 Goals
 
