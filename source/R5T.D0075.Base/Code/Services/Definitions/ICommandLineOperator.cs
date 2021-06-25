@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 
 
-namespace R5T.E0024.D001
+namespace R5T.D0075
 {
     public interface ICommandLineOperator
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using R5T.T0030;
 
 
-namespace R5T.E0024.D001
+namespace R5T.D0075
 {
     public class CommandLineOperator : ICommandLineOperator
     {
