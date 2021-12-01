@@ -2,10 +2,13 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 
+using R5T.T0064;
+
 
 namespace R5T.D0075
 {
-    public interface ICommandLineOperator
+    [ServiceDefinitionMarker]
+    public interface ICommandLineOperator : IServiceDefinition
     {
         Task<int> Run(string command, string arguments, DataReceivedEventHandler receiveOutputData, DataReceivedEventHandler receiveErrorData);
     }

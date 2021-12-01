@@ -1,0 +1,3 @@
+R5T.D0075.T001 - IDataReceivedEventHandler, IDataReceivedEventHandlerOperator, and related extension method bases.
+
+GOALS:

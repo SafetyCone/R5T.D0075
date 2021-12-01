@@ -2,12 +2,12 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-using R5T.Dacia;
+using R5T.T0063;
 
 
-namespace R5T.D0075
+namespace R5T.D0075.Default
 {
-    public static class IServiceCollectionExtensions
+    public static partial class IServiceCollectionExtensions
     {
         /// <summary>
         /// Adds the <see cref="CommandLineOperator"/> implementation of <see cref="ICommandLineOperator"/> as a <see cref="ServiceLifetime.Singleton"/>.
@@ -17,15 +17,6 @@ namespace R5T.D0075
             services.AddSingleton<ICommandLineOperator, CommandLineOperator>();
 
             return services;
-        }
-
-        /// <summary>
-        /// Adds the <see cref="CommandLineOperator"/> implementation of <see cref="ICommandLineOperator"/> as a <see cref="ServiceLifetime.Singleton"/>.
-        /// </summary>
-        public static IServiceAction<ICommandLineOperator> AddCommandLineOperatorAction(this IServiceCollection services)
-        {
-            var serviceAction = ServiceAction.New<ICommandLineOperator>(() => services.AddCommandLineOperator());
-            return serviceAction;
         }
     }
 }
