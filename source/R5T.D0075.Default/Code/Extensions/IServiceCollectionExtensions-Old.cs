@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using R5T.Dacia;
 
 
-namespace R5T.D0075
+namespace R5T.D0075.Default
 {
     public static partial class IServiceCollectionExtensions
     {
